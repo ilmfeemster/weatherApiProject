@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:00 <span id="am-pm">PM</span><span class="small-pst">(Local time)</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 19 July
+                </div>
+
+                <div class="current-weather" id="current-weather">
+                    <div class="topWeather">
+                        <div class="current-city" id ="city">San Francisco</div>
+                        <div class="description">Sunny</div>
+                    </div>                    
+                    <img src="http://openweathermap.org/img/wn/01d@4x.png" alt="weather icon" class="current-icon">
+                    <div class="current-temp">69&#176 F</div>
+                </div>
+
+                <div class="others" id="current-weather-items">
+                    <div class="weather-item">
+                        <div>Humidity</div>
+                        <div>7%</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Wind Speed</div>
+                        <div>17.38mph</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Sunrise</div>
+                        <div>6:30 am</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Sunset</div>
+                        <div>7:23 pm</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">America/Los_Angeles</div>
+                <div class="country" id="country">IN</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="pop-main" id="pop-up">
+        <div class="pop-up">
+            <h1>Local Weather</h1>
+            <p>Enter your city for current weather and future forecasts.</p>
+            <div class="city-search">
+                <div class="input-data">
+                    <input type="text" class="search-bar" id="search-bar" required>
+                    <label class="floating-text" id = "floating-text">Search</label>
+                </div>
+            </div>
+            <br>
+            <button class="search" id="search">Search</button>
+        </div>
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">High - 65.6&#176 F</div>
+                <div class="temp">Low - 47.8&#176 F</div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 63.2&#176 F</div>
+                <div class="temp">Low - 39.6&#176 F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 59.1&#176 F</div>
+                <div class="temp">Low - 32.2&#176 F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 71.9&#176 F</div>
+                <div class="temp">Low - 50.6&#176 F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 65.5&#176 F</div>
+                <div class="temp">Low - 45.5&#176 F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 61.6&#176 F</div>
+                <div class="temp">Low - 40.6&#176 F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sun</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">High - 66.1&#176 F</div>
+                <div class="temp">Low - 44.4&#176 F</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
