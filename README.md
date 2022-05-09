@@ -1,4 +1,5 @@
 # weatherApiProject
+## API key is now premium, no longer works.
 READ ME.
 This is a weather app that should be able to run with all files downloaded.
 On the app.js file line 18 there is an API_KEY variable needed from website "https://openweathermap.org/api" it is free to sign up and recieve an api key
